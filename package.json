@@ -16,6 +16,7 @@
   "author": "Enol Cachero Ramirez",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "bootstrap": "^5.0.1",
     "css-loader": "^5.2.4",
     "emailjs-com": "^2.6.4",
@@ -39,5 +40,10 @@
     "nodemon": "^2.0.7",
     "webpack": "^4.11.1",
     "webpack-cli": "^3.0.3"
-  }
+  },
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
 }
