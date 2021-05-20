@@ -1,0 +1,11 @@
+    Ojo que tiene que ser versiones para que funcione y no dé error al hacer "npm run webpack"
+    
+    "babel-core": "^6.26.3",
+    "webpack": "^4.11.1", 
+    "webpack-cli": "^3.0.3"
+
+
+    ****************************************************************************************************
+
+
+
