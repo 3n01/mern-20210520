@@ -16,21 +16,27 @@
   "author": "Enol Cachero Ramirez",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.14.3",
     "@babel/polyfill": "^7.12.1",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.1",
     "css-loader": "^5.2.4",
     "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
+    "file-loader": "^6.2.0",
     "i18next": "^20.2.4",
     "mongoose": "^5.12.10",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
+    "node-sass": "^6.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.8.15",
     "react-router-dom": "^5.2.0",
-    "simple-react-lightbox": "^3.6.6"
+    "sass-loader": "^11.1.1",
+    "simple-react-lightbox": "^3.6.6",
+    "style-loader": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

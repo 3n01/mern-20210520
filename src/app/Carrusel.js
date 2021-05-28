@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
+import '../public/css/style.css';
+import {PROTOCOL, HOST, PORT, TAB_CARRUSEL} from './Constantes';
 
 const Carrusel = () => {
     useEffect(() => {
@@ -10,7 +12,7 @@ const Carrusel = () => {
       const [items, setItems] = useState([]);
     
       const fetchItems =  () => {
-        fetch('http://localhost:8080/api/images/1', {
+        fetch(`${PROTOCOL}${HOST}:${PORT}/api/images/${TAB_CARRUSEL}`, {
           method: 'GET',
           mode: 'cors'
         }).then( data => data.json())
@@ -24,10 +26,9 @@ const Carrusel = () => {
       }
     
       return (
-        <div className="carrusel">
+        <div className="carrusel carousel-fade">
           <Carousel>
             {items.sort((a,b) => a.sort - b.sort).map(item => {
-              alert(item.url)
               return <Carousel.Item key={item._id}>
                 <img className="image-carousel" 
                     src={item.url} 

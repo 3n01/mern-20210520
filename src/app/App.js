@@ -8,6 +8,7 @@ import Noticias from './Noticias';
 import Contacto from './Contacto';
 import GestionImagenes from './GestionImagenes';
 import GestionNoticias from './GestionNoticias';
+// import Footer from './Footer';
 
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -28,14 +29,11 @@ function App() {
                     <Route path="/gestionnoticias" component={GestionNoticias} />
                 </div>
             </Switch>
-
+            {/* <Footer/> */}
         </Router>
 
 
     );
 }
-
-
-
 
 export default App;

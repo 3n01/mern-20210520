@@ -14,10 +14,15 @@ module.exports = {
                 use: "babel-loader",
                 test: /\.js$/,
                 exclude: /node_modules/
+            }
+            ,
+            {
+                test: /\.(sass|scss|css)$/,
+                use: ['style-loader', 'css-loader']
             },
             {
-                test: /\.css$/,
-                use: ['css-loader']
+                test: /\.(svg|eot|woff|woff2|ttf)$/,
+                use: ['file-loader']
             }
         ]
     }

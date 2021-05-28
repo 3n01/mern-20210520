@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = 9090;
 const morgan = require('morgan');
 const path = require('path');
 const directory = path.join(__dirname, '/uploads');
